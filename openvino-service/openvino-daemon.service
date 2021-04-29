@@ -1,0 +1,13 @@
+
+[Unit]
+Description=openvino Service
+
+[Service]
+Type=simple
+ExecStart=/srv/openvino-service/start_vino.sh
+RemainAfterExit=yes
+User=elnis
+
+
+[Install]
+WantedBy=graphical.target
